@@ -1,0 +1,3 @@
+﻿  newton-cotes.cpp
+C:\Users\karol morawski\_projects\Visual Studio\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(11): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\karol morawski\_projects\Visual Studio\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(21): error C4716: 'nc_trapez': must return a value
