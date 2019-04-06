@@ -1,3 +1,4 @@
 ﻿  newton-cotes.cpp
-C:\Users\karol morawski\_projects\Visual Studio\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(11): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\karol morawski\_projects\Visual Studio\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(21): error C4716: 'nc_trapez': must return a value
+F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(144): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
+F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(145): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+  mnumeryczne.vcxproj -> F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\x64\Debug\mnumeryczne.exe
