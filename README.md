@@ -79,11 +79,11 @@ double nc_simpson(double, double, int, double(*fun)(double));
 Najlepiej użyć ```math_wrapper```. Lista zaimplementowanych funkcji (chcesz więcej to se zrób):
 
 ```cpp
-math_pow()          //y=x^a
-math_exp()          //y=x^e
-math_linear()       //y=a*x
-math_const_func()   //y=a
-math_poly()         //wielomian (horner)
+math_pow();          //y=x^a
+math_exp();          //y=x^e
+math_linear();       //y=a*x
+math_const_func();   //y=a
+math_poly();         //wielomian (horner)
 ```
 
 ### *Całkowanie numeryczne*
