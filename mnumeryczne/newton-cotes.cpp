@@ -66,6 +66,69 @@ double nc_simpson(double a, double b, int precision, double(*fun)(double))
 	return result;
 }
 
+
+//Table struct
+struct GaussTable {
+
+};
+
+//Kwadratura Gaussa
+double gauss_quad(double a, double b, int n, double(*fun)(double)) {
+
+	double c = -1;
+	double d = 1;
+
+	//mapowanie na przedzial
+	double alfa = (b-a) / (d - c);
+	double beta = (a * d - b * c) / (d - c);
+
+	double table[4][4];
+	
+	std::vector<double> x = { -0.577350, 0.577350, -0.774597, 0, 0.774597, -0.861136, -0.339981, 0.339981,  0.861136, -0.906180, -0.538469, 0, 0.538469, 0.906180 };
+	std::vector<double> A = { 1, 1, 0.555555, 0.888888, 0.555555,0.347855, 0.652145, 0.652145, 0.347855, 0.236927, 0.478629, 0.568889, 0.478629, 0.236927};
+
+	for (int i = 0; i < 14; i++) {
+		A[i] = A[i] * alfa;
+		x[i] = (x[i] * alfa) + beta;
+	}
+
+	double result1 = 0;
+	double result2 = 0;
+	double result3 = 0;
+	double result4 = 0;
+
+	//n=1
+	for (int i = 0; i <=1; i++) {
+		result1 = result1 + A[i] * fun(x[i]);
+	}
+
+	std::cout << "Dla n=1: " << result1 << std::endl;
+
+	//n=2
+	for (int i = 2; i <= 4; i++) {
+		result2 = result2 + A[i] * fun(x[i]);
+	}
+
+	std::cout << "Dla n=2: " << result1 << std::endl;
+
+	//n=3
+	for (int i = 5; i <= 8; i++) {
+		result3 = result3 + A[i] * fun(x[i]);
+	}
+
+
+	std::cout << "Dla n=3: " << result1 << std::endl;
+
+	//n=4
+	for (int i = 9; i <= 13; i++) {
+		result4 = result4 + A[i] * fun(x[i]);
+	}
+
+	std::cout << "Dla n=4: " << result4 << std::endl;
+
+	return -1;
+}
+
 //Wrappers for math functions
 double (*math_wrapper(std::string func_name, double param))(double)
 {
@@ -108,6 +171,7 @@ double (* math_wrapper(std::string func_name, std::vector<double> param))(double
 		return nullptr;
 	}
 }
+
 
 
 //Quadratic function
@@ -162,8 +226,9 @@ void nc_main()
 	}
 
 	//Output (real value == 193.12)
-	std::cout << integrationNum(x, math_wrapper("math_poly", wsp1)) << std::endl;
-	std::cout << nc_trapez(-2, 2, 1000, math_wrapper("math_poly", wsp1));
-	std::cout << std::endl;
-	std::cout << nc_simpson(-2, 2, 1000, math_wrapper("math_poly", wsp1));
+	//std::cout << integrationNum(x, math_wrapper("math_poly", wsp1)) << std::endl;
+	//std::cout << nc_trapez(-2, 2, 1000, math_wrapper("math_poly", wsp1));
+	//std::cout << std::endl;
+	//std::cout << nc_simpson(-2, 2, 1, math_wrapper("math_poly", wsp1));
+	std::cout << gauss_quad(-2, 2, 2, math_wrapper("math_poly", wsp1));
 }

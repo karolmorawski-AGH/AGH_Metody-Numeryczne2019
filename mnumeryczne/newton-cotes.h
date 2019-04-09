@@ -9,6 +9,8 @@ double integrationNum(std::vector<double> fx, double(*fun)(double));
 double nc_trapez(double, double, int, double(*fun)(double));
 double nc_simpson(double, double, int, double(*fun)(double));
 
+double gauss_quad(double c, double d, int st, double(*fun)(double));
+
 //Wrapper for math functions
 double (*math_wrapper(std::string, double))(double);
 double (*math_wrapper(std::string))(double);

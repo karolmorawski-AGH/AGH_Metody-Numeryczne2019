@@ -1,4 +1,5 @@
 ﻿  newton-cotes.cpp
-F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(144): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
-F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(145): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-  mnumeryczne.vcxproj -> F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\x64\Debug\mnumeryczne.exe
+C:\Users\karol morawski\_projects\Visual Studio\Metody-Numeryczne2019\mnumeryczne\newton-cotes.cpp(85): warning C4101: 'table': unreferenced local variable
+C:\Users\karol morawski\_projects\Visual Studio\Metody-Numeryczne2019\mnumeryczne\newton-cotes.cpp(208): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
+C:\Users\karol morawski\_projects\Visual Studio\Metody-Numeryczne2019\mnumeryczne\newton-cotes.cpp(209): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+  mnumeryczne.vcxproj -> C:\Users\karol morawski\_projects\Visual Studio\Metody-Numeryczne2019\x64\Debug\mnumeryczne.exe
