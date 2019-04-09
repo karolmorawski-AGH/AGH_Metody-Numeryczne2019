@@ -97,3 +97,9 @@ Metoda trapezów
 ```cpp
 double trapezoidal_integration(std::vector<double>, int, int, unsigned int);
 ```
+
+### *Kwadratura Gaussa*
+
+```cpp
+double gauss_quad(double a, double b, int precision, double(*fun)(double));
+```
