@@ -16,3 +16,16 @@ std::vector<std::vector<std::string>> readCSV(std::string);
 std::vector<std::vector<std::string>> readCSV(std::string, char);
 //Casts vector of strings from readCSV() as doubles
 std::vector<std::vector<double>> doubleVector(std::vector<std::vector<std::string>>);
+
+//Wrapper for math functions
+double (*math_wrapper(std::string, double))(double);
+double (*math_wrapper(std::string))(double);
+double (*math_wrapper(std::string, std::vector<double>))(double);
+
+//Math functions
+double math_pow(double);
+double math_exp(double);
+double math_linear(double);
+double math_const_func(double);
+double math_poly(double);
+double p_ciepln(double x, double y);

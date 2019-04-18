@@ -73,10 +73,6 @@ double trapezoidal_integration(std::vector<double> coefficients, int start, int 
 	return result * dx;
  }
 
-double trapezoidal_integration(std::string filename)
-{
-	return 0.0;
-}
 
 //trapezy przyjmuje wezly (tablica wezlow i wskaznik do funkcji dla ktorej chcemy policzyc calke)
 //zaimplementowanie kwadratow newtona-cotsa 
