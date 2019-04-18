@@ -202,6 +202,14 @@ double math_poly(double x)
 	return result;
 }
 
+//Przewodnictwo cieplne
+double p_ciepln(double x) {
+	//double alfa = -0.0000000000101;
+	double alfa = -0.000000000001;
+	double beta = 0;
+	return alfa * (x * x * x * x - beta);
+}
+
 //Main function (example)
 void nc_main()
 {

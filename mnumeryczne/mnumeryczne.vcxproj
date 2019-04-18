@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="diffeq.cpp" />
     <ClCompile Include="Integration.cpp" />
     <ClCompile Include="InterNewton.cpp" />
     <ClCompile Include="lagrangeInter.cpp" />
@@ -28,6 +29,7 @@
     <ClCompile Include="newton-cotes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="diffeq.h" />
     <ClInclude Include="Integration.h" />
     <ClInclude Include="InterNewton.h" />
     <ClInclude Include="lagrangeInter.h" />

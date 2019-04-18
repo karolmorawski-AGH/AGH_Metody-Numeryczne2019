@@ -21,6 +21,7 @@ double math_exp(double);
 double math_linear(double);
 double math_const_func(double);
 double math_poly(double);
+double p_ciepln(double x);
 
 //Main function (example)
 void nc_main();

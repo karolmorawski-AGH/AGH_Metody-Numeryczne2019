@@ -5,10 +5,11 @@
 #include "InterNewton.h"
 #include <vector>
 #include "Integration.h"
-#include "newton-cotes.h"
+//#include "newton-cotes.h"
+#include "diffeq.h"
 
 using namespace std;
 
 int main() {
-	nc_main();
+	diffeq_main();
 }

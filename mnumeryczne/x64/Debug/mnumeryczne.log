@@ -1,7 +1,2 @@
-﻿  main.cpp
-  newton-cotes.cpp
-F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(79): warning C4101: 'table': unreferenced local variable
-F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(200): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'double', possible loss of data
-F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\mnumeryczne\newton-cotes.cpp(201): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-  Generating Code...
-  mnumeryczne.vcxproj -> F:\_projects\Visual Studio\Metody Numeryczne\metody_numeryczne2019\x64\Debug\mnumeryczne.exe
+﻿  diffeq.cpp
+  mnumeryczne.vcxproj -> C:\Users\karol morawski\_projects\Visual Studio\MetodyNumeryczne\Metody-Numeryczne2019\x64\Debug\mnumeryczne.exe
