@@ -1,5 +1,4 @@
 #pragma once
-
 #include <vector>
 #include <string>
 #include <fstream>
@@ -7,10 +6,7 @@
 #include <algorithm>
 #include <typeinfo>
 
-//Horner method (for-loop and recursive version)
-double horner(std::vector<double>, unsigned int, double);
-double hornerR(std::vector<double>, unsigned int, double);
-//Read as CSV file - default separator is ','
+//Read as CSV file - default separator is ';'
 std::vector<std::vector<std::string>> readCSV(std::string);
 //Read as CSV file - specifies separator
 std::vector<std::vector<std::string>> readCSV(std::string, char);
@@ -23,6 +19,8 @@ double (*math_wrapper(std::string))(double);
 double (*math_wrapper(std::string, std::vector<double>))(double);
 
 //Math functions
+double horner(std::vector<double>, unsigned int, double);
+double hornerR(std::vector<double>, unsigned int, double);
 double math_pow(double);
 double math_exp(double);
 double math_linear(double);

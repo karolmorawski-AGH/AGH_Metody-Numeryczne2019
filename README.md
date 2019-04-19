@@ -1,6 +1,8 @@
 # Metody Numeryczne 2019
 semestr 4 AGH WIMiIP
 
+## Funkcje główne:
+
 ### *Interpolacja Lagrange'a:*
 ```cpp
 double lag_inter(double x);
@@ -76,16 +78,6 @@ Kwadratura Newtona-Cotesa (wzór Simpsona)  - liczy całkę z funkcji dla podane
 double nc_simpson(double, double, int, double(*fun)(double));
 ```
 
-Najlepiej użyć ```math_wrapper```. Lista zaimplementowanych funkcji (chcesz więcej to se zrób):
-
-```cpp
-math_pow();          //y=x^a
-math_exp();          //y=x^e
-math_linear();       //y=a*x
-math_const_func();   //y=a
-math_poly();         //wielomian (horner)
-```
-
 ### *Całkowanie numeryczne*
 
 Metoda prostokątów
@@ -102,4 +94,63 @@ double trapezoidal_integration(std::vector<double>, int, int, unsigned int);
 
 ```cpp
 double gauss_quad(double a, double b, int precision, double(*fun)(double));
+```
+
+### *Metoda Eulera:*
+
+```cpp
+double euler(double x, double y0, double h, double(*fun)(double, double));
+```
+
+### *Metoda Heune'a (ulepszona metoda Eulera):*
+
+```cpp
+double heune(double x, double y0, double h, double(*fun)(double, double));
+```
+
+### *Zmodyfikowana metoda Eulera:*
+
+```cpp
+double euler_mod(double x, double y0, double h, double(*fun)(double, double));
+```
+
+### *Metoda Runge-Kutta:*
+
+```cpp
+double runge_kutta(double x, double y0, double h, double(*fun)(double, double));
+```
+
+## Funkcje pomocnicze: 
+
+Wszystkie znajdują się w ``` MNmath.cpp ```
+
+### *Funkcje matematyczne:*
+
+```cpp
+math_pow(x);          //y=x^a
+math_exp(x);          //y=x^e
+math_linear(x);       //y=a*x
+math_const_func(x);   //y=a
+math_poly(x);         //wielomian (horner)
+p_ciepln(x,y)         //równanie przewodnictwa cieplnego
+```
+
+Najlepiej użyć wrappera
+```cpp 
+math_wrapper(string name, double param); 
+``` 
+gdzie liczba argumentów zależy od typu funkcji (od 0 do 2 parametrów).
+
+### *Czytanie z pliku wejściowego:*
+
+Czyta dane z pliku wejściowego, domyślny separator:  ```;```
+
+```cpp
+std::vector<std::vector<std::string>> readCSV(std::string filename);
+```
+
+Czyta dane z pliku wejściowego, umożliwia określenie separatora:
+
+```cpp
+std::vector<std::vector<std::string>> readCSV(std::string filename, char delimeter);
 ```
