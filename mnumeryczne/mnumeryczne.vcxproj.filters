@@ -39,6 +39,9 @@
     <ClCompile Include="diffeq.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gauss_lineareq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MnMath.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="diffeq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gauss_lineareq.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

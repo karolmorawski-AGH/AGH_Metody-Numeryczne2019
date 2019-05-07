@@ -7,9 +7,10 @@
 #include "Integration.h"
 //#include "newton-cotes.h"
 #include "diffeq.h"
+#include "gauss_lineareq.h"
 
 using namespace std;
 
 int main() {
-	diffeq_main();
+	gauss_main();
 }
