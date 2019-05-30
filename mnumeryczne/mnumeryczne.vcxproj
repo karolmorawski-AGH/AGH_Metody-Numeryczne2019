@@ -28,6 +28,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MnMath.cpp" />
     <ClCompile Include="newton-cotes.cpp" />
+    <ClCompile Include="nonlinear.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="diffeq.h" />
@@ -38,6 +39,7 @@
     <ClInclude Include="LeastSquares.h" />
     <ClInclude Include="MnMath.h" />
     <ClInclude Include="newton-cotes.h" />
+    <ClInclude Include="nonlinear.h" />
     <ClInclude Include="Point.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

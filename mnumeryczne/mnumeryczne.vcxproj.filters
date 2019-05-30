@@ -42,6 +42,9 @@
     <ClCompile Include="gauss_lineareq.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="nonlinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MnMath.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gauss_lineareq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nonlinear.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -8,9 +8,10 @@
 //#include "newton-cotes.h"
 #include "diffeq.h"
 #include "gauss_lineareq.h"
+#include "nonlinear.h"
 
 using namespace std;
 
 int main() {
-	gauss_main();
+	nonlinear_main();
 }

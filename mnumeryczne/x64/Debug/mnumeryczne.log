@@ -1,3 +1,2 @@
-﻿  gauss_lineareq.cpp
-C:\Users\karol morawski\_projects\Visual Studio\MetodyNumeryczne\Metody-Numeryczne2019\mnumeryczne\gauss_lineareq.cpp(25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  nonlinear.cpp
   mnumeryczne.vcxproj -> C:\Users\karol morawski\_projects\Visual Studio\MetodyNumeryczne\Metody-Numeryczne2019\x64\Debug\mnumeryczne.exe
